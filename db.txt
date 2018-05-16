@@ -1,0 +1,27 @@
+CREATE TABLE `files` (
+  `id` int(11) NOT NULL,
+  `userid` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `is_link_generated` varchar(255) NOT NULL,
+  `size` varchar(8) NOT NULL,
+  `uploaded_at` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `files`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `files`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(32) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;

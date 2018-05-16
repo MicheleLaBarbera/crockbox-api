@@ -1,0 +1,9 @@
+nome: Michele
+cognome: La Barbera
+sesso: M
+RESIDENZA
+	provincia: Palermo
+	indirizzo: via Palmerino
+PRIMO_QUADRIMESTRE
+	italiano: 2
+	storia: 3
