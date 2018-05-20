@@ -74,7 +74,7 @@ if(isset($file))
 
     echo json_encode(array(
         "status" => 200,
-        "fileName" => $filesRow['name'],
+        "fileName" => $fileName,
         "fileContent" => base64_encode($fileContent)
     ));
 
